@@ -1,6 +1,13 @@
 package com.github.flavicentin.study_api.model;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table name = "pessoas"
 public class Pessoa {
+	@Id
 	private Long id;
 	private String nome;
 	private int idade;
